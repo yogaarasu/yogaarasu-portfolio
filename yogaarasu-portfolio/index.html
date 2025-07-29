@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yogaarasu-portfolio</title>
+
+  <link rel="icon" href="./favicon-y.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Yogaarasu</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skill</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <img src="./hum-icons/open.svg" width="40px" height="auto">
+    </div>
+
+
+    <!-- Sidebar menu for mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-btn" id="closeBtn">
+        <img src="./hum-icons/close.svg">
+      </div>
+      <a href="#home" onclick="closeSidebar()">Home</a>
+      <a href="#about" onclick="closeSidebar()">About</a>
+      <a href="#skill" onclick="closeSidebar()">Skill</a>
+      <a href="#project" onclick="closeSidebar()">Project</a>
+      <a href="#contact" onclick="closeSidebar()">Contact</a>
+    </div>
+  </header>
+
+  <!-- banner -->
+
+  <section id="home">
+    <div class="container">
+      <div class="banner-wrapper">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="banner-Info">
+              <span>Hello,</span>
+              <h2>I'm Yogaarasu</h2>
+              <h1>Full Stack Developer</h1>
+              <p>As a Full Stack Developer building responsive, user-friendly web applications. I create seamless
+                digital experiences from front to back using modern technologies.</p>
+              <a href="./Yogaarasu-Resume.pdf" class="resume-btn" target="_blank">Resume</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="banner-primary-img">
+              <img src="./banner-primary-img.jpg" alt="yogarasu image" width="50%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about -->
+  <section id="about">
+    <div class="container">
+      <div class="about-title">
+        <h4>About Me</h4>
+      </div>
+      <div class="about-wrapper">
+        <div class="about-right">
+          <div class="about-primary-img">
+            <img src="./banner-primary-img.jpg" alt="yogaarasu image" width="50%" height="auto">
+          </div>
+        </div>
+        <div class="about-left">
+          <div class="about-intro">
+            <p>Hello! I'm <span>Yogaarasu</span>, a budding Full Stack Developer interested in creating smooth and
+              effective web experiences. As I enter the professional world, I bring a new perspective with a solid
+              understanding of full-stack development. Apart from coding, I have a highly developed skill set for
+              problem-solving and data analysis, which helps me tackle challenges from an analytical angle. My effective
+              communication and project management skills further help ensure smooth collaboration and well-planned
+              execution. I look forward to being a part of a progressive team where I can enhance my technical skills
+              and work on meaningful projects.</p>
+          </div>
+          <div class="extra-Info-main">
+            <div class="edu-box">
+              <div class="edu-Info">
+                <img src="./about-extra-info-img/graduation-cap.svg" alt="education icon" width="20px">
+                <span>Education</span>
+                <p>Bsc Computer science</p>
+                <p>2023-2026</p>
+              </div>
+            </div>
+            <div class="lang-box">
+              <div class="lang-Info">
+                <img src="./about-extra-info-img/globe.svg" alt="language icon" width="20px">
+                <span class="main-lang-span">Language</span>
+                <span class="lang">Tamil</span>
+                <span class="lang">English</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill -->
+  <section id="skill">
+    <div class="container">
+      <div class="skill">
+        <div class="skill-title">
+          <h4>Skills</h4>
+        </div>
+        <div class="skill-wrapper">
+          <div class="frontend-skill">
+            <div class="frontend-skill-title">
+              <h4>Frontend</h4>
+            </div>
+            <div class="frontend-icon-group">
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/html.png" alt="html icon" width="70px">
+                <p>HTML</p>
+              </div>
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/css.png" alt="css icon" width="70px">
+                <p>CSS</p>
+              </div>
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/js.png" alt="Javascript icon" width="70px">
+                <p>Javascript</p>
+              </div>
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/react.webp" alt="React icon" width="70px">
+                <p>React</p>
+              </div>
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/tailwind-css.png" alt="Tailwind-css icon" width="70px">
+                <p>Tailwind CSS</p>
+              </div>
+              <div class="frontend-icon">
+                <img src="./skills-icons/frontend-icons/bootstarp.png" alt="Bootstrap icon" width="70px">
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="backend-skill">
+            <div class="backend-skill-title">
+              <h4>Backend</h4>
+            </div>
+            <div class="backend-icon-group">
+              <div class="backend-icon">
+                <img src="./skills-icons/backend-icons/nodejs.png" alt="node-js icon" width="70px">
+                <p>Node.js</p>
+              </div>
+              <div class="backend-icon">
+                <img src="./skills-icons/backend-icons/express.png" alt="express icon" width="70px">
+                <p>Express.js</p>
+              </div>
+              <div class="backend-icon">
+                <img src="./skills-icons/backend-icons/mongodb.webp" alt="mongoDB icon" width="70px">
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lang-skill-wrapper">
+          <div class="language-skill">
+            <div class="language-skill-title">
+              <h4>Language & Database</h4>
+            </div>
+            <div class="language-icon-group">
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/c.png" alt="c icon" width="70px">
+                <p>C</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/c++.png" alt="c++ icon" width="70px">
+                <p>C++</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/java.webp" alt="Java icon" width="70px">
+                <p>Java</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/python.svg" alt="python icon" width="70px">
+                <p>Python</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/chash.webp" alt="c# icon" width="70px">
+                <p>C#</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/php.png" alt="php icon" width="100px">
+                <p>PHP</p>
+              </div>
+              <div class="language-icon">
+                <img src="./skills-icons/programming-lang-icons/mysql.png" alt="mysql icon" width="70px">
+                <p>mySQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- project -->
+  <section id="project">
+    <div class="container">
+      <div class="project">
+        <div class="project-title">
+          <h4>Project</h4>
+        </div>
+        <div class="project-wrapper">
+          <div class="project1">
+            <video width="300px" controls autoplay loop>
+              <source src="./project-img/project1.mp4" type="video/mp4">
+            </video>
+            <h5>EduRise Academy</h5>
+            <p>Quality education and opportunities for a brighter future.</p>
+            <a href="#">View more <img src="./project-img/arrow.svg" alt="arrow image"></a>
+          </div>
+          <div class="project2">
+            <img src="./project-img/project2.jpg" alt="project2 image" width="300px" height="168px">
+            <h5>VoyageVista</h5>
+            <p>Explore and book unforgettable travel experiences around the world.</p>
+            <a href="#">View more <img src="./project-img/arrow.svg" alt="arrow image"></a>
+          </div>
+          <div class="project3">
+            <img src="./project-img/project3.jpg" alt="project3 image" width="300px" height="168px">
+            <h5>TimberNest</h5>
+            <p>Stylish and durable furniture to elevate every space.</p>
+            <a href="#">View more <img src="./project-img/arrow.svg" alt="arrow image"></a>
+          </div>
+        </div>
+        <div class="show-project-btn">
+          <a href="#">Show more <img src="./project-img/arrow-50.png" alt="arrow image" width="20px"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact">
+        <div class="contact-title">
+          <h4>Contact us</h4>
+          <p><span>Looking for a developer to bring your vision to life?</span> I'm just one message away!</p>
+        </div>
+        <div class="contact-left">
+          <div>
+            <img src="./contact-icons/location.svg" alt="location icon" width="25px">
+            <span>Coimbatore</span>
+          </div>
+          <div>
+            <img src="./contact-icons/email.svg" alt="email icon" width="25px">
+            <a href="mailto:yogaarasu465@gmail.com">yogaarasu465@gmail.com</a>
+          </div>
+          <div>
+            <img src="./contact-icons/phone-call.svg" alt="phone icon" width="25px">
+            <a href="tel:+918248586511">+91 8248586511</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <nav class="nav-links-footer">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skill</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+    <div class="footer-bottom">
+      <diV>
+        <h5>Yogaarasu</h5>
+      </diV>
+      <p>&copy;2025 Yogaarasu. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/yogaarasu-k-aa04a1326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><img src="./social-media-icons/linkedin.svg" alt="linkedin icon" width="30px"></a>
+        <a href="https://github.com/yogaarasu" target="_blank"><img src="./social-media-icons/github.svg"
+            alt="github icon" width="30px"></a>
+        <a href="https://wa.me/918248586511?text=Hi%20Yogaarasu%2C%20I%20visited%20your%20portfolio"
+          target="_blank"><img src="./social-media-icons/whatsapp.svg" alt="whatsapp icon" width="30px"></a>
+        <a href="https://www.instagram.com/yogaarasu_143" target="_blank"><img src="./social-media-icons/instagram.svg"
+            alt="instagram icon" width="30px"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
